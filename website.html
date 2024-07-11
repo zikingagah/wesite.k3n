@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART WORKS K3N</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Gaya umum untuk semua perangkat */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #000000; /* Warna baru untuk latar belakang header */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+        .produk-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .produk-item {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: calc(50% - 40px); /* Lebar item produk untuk tampilan seluler */
+            max-width: 300px; /* Lebar maksimum item produk */
+            margin: 20px;
+        }
+        .produk-item:hover {
+            transform: translateY(-10px);
+        }
+        .produk-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .produk-item h3 {
+            color: #333;
+            padding: 10px 0;
+        }
+        .produk-item p {
+            padding: 0 15px;
+            color: #777;
+        }
+        .beli-sekarang, .hubungi-kami {
+            background-color: #ff4500;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .beli-sekarang:hover, .hubungi-kami:hover {
+            background-color: #e63900;
+        }
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 0px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .hubungi-section {
+            margin-top: 40px;
+        }
+
+        /* Aturan untuk layar yang lebih kecil, seperti ponsel */
+        @media (max-width: 768px) {
+            .produk-item {
+                width: calc(100% - 40px); /* Lebar penuh untuk tampilan seluler */
+            }
+        }
+        header {
+    background-image: url(GAMBAR);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    ...
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ART WORKS K3N</h1>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="https://wa.me/6289529116537">Hubungi Kami</a></li> <!-- Link langsung ke WhatsApp -->
+            </ul>
+        </nav>
+        
+    </header>
+    
+    <main>
+        <section id="beranda">
+            <h2>Selamat datang di ART WORKS K3N</h2>
+            <p>ART WORKS K3N adalah tempat untuk menemukan karya seni terbaik. Kami menawarkan berbagai produk unik dengan kualitas terbaik.</p>
+        </section>
+
+        <section id="produk" class="produk">
+            <h2>Produk Kami</h2>
+            <div class="produk-container">
+                <div class="produk-item">
+                    <h3>Produk 1</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 2</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 3</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 4</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 5</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 6</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 7</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 8</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 9</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+                <div class="produk-item">
+                    <h3>Produk 10</h3>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqSAVS3ADJr2WamnfwojS2ut0aJ5DrXWZmt9s5425ScA5dxMQW9foTnnixUTHdR5ZNtqk&usqp=CAU" alt="Produk 1">
+                    <p>Harga: Rp 100.000</p>
+                    <p>Deskripsi singkat produk 1.</p>
+                    <button class="beli-sekarang" onclick="window.location.href='https://wa.me/6289529116537?text=Saya%20tertarik%20dengan%20Produk%201%20-%20Rp%20100.000,%20silakan%20bantu%20saya%20untuk%20memproses%20pembelian'" aria-label="Beli Produk 1 Sekarang">Beli Sekarang</button>
+                </div>
+            </div>
+        </section>
+    
+       
+
+       
+    </main>
+    
+
+    <footer>
+        <p>Hak Cipta &copy; 2024 ART WORKS K3N. Semua hak dilindungi.</p>
+    </footer>
+</body>
+</html>
